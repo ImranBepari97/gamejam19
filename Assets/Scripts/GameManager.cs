@@ -10,11 +10,15 @@ public class GameManager : MonoBehaviour
     private Image fader;
     private int CurrentScene;
     private bool ChangingScenes;
-    
+    public SfxPlayer sfx;
+    public MusicPlayer mp;
     
     // Start is called before the first frame update
     void Awake()
     {
+        sfx = GetComponentInChildren<SfxPlayer>();
+        mp = GetComponentInChildren<MusicPlayer>();
+
         if (!Created) //ensures there is only ever one game manager in scene
         {
             DontDestroyOnLoad(this.gameObject);

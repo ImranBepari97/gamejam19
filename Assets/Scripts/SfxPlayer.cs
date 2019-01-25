@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SfxPlayer : MonoBehaviour
 {
-    private bool IsMuted;
+    public bool IsMuted;
     private AudioSource[] SfxPlayers;
     // Start is called before the first frame update
     void Awake()
