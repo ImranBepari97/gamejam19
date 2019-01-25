@@ -20,5 +20,11 @@ public class PlayerMovement : MonoBehaviour
     {
 		rb.velocity = new Vector3(Input.GetAxis("Horizontal" + playerNum),0,Input.GetAxis("Vertical" + playerNum)) * speed;
 
+		if(rb.velocity.magnitude != 0) 
+		{
+			rb.rotation = Quaternion.LookRotation(rb.velocity);
+		}
+			
+
     }
 }
