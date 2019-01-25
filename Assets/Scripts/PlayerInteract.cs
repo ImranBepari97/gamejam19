@@ -26,6 +26,16 @@ public class PlayerInteract : MonoBehaviour
                 GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0); //zero out velocity
             }
         }
+
+		//pick up an item like a mop
+		if(Input.GetButtonDown("Fire2") && !IsCleaning) 
+		{
+			if (CurrentInteractObject != null) //if interacting object within range
+			{
+				//if() {
+				//}
+			}
+		}
     }
 
     /// <summary>
@@ -42,12 +52,12 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerStay(Collider other) //using on stay rather than enter to get other objects in range when one is finished interacting with
     {
-        if (other.gameObject.CompareTag("Interactable")) 
-        {
+		Interactable inter;
+		if (inter = other.gameObject.GetComponent<Interactable>()) {
             if (CurrentInteractObject == null)
             {
                 CurrentInteractObject = other.gameObject;
-                CurrentInteractObject.GetComponent<Mess>().PlayerInRange();
+				inter.PlayerInRange();
             }
         }
     }
