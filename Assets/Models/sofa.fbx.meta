@@ -29,6 +29,7 @@ ModelImporter:
     3300004: //RootNode
     4300000: Cube
     4300002: Cube.001
+    4300004: sofa
     10800000: Light
   externalObjects: {}
   materials:
