@@ -10,9 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4436668329341773874}
   - component: {fileID: 4436668329341773875}
+  - component: {fileID: 2468832749267011305}
+  - component: {fileID: 4464370588251070657}
   m_Layer: 0
   m_Name: Mess
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,3 +81,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2468832749267011305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4436668329341773884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0919dd51cb4fac4429239e02c8cdc373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CleanUpTime: 0
+  MessPoints: 0
+  glowing: {fileID: 0}
+  normal: {fileID: 0}
+--- !u!65 &4464370588251070657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4436668329341773884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.3584976, y: 3.0305011, z: 2.985296}
+  m_Center: {x: 0.6918373, y: -0.43845773, z: -1.3926482}
