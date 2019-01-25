@@ -32,9 +32,7 @@ public class CleaningTool : Interactable
     public void AttachToPlayer(PlayerInteract activatingPlayer)
     {
         player = activatingPlayer;
-        print("SET TOOL");
         activatingPlayer.currentTool = toolName;
-        print("SET TOOL1");
         rb.position = player.transform.GetChild(0).position;
         joint = gameObject.AddComponent<FixedJoint>();
         joint.connectedBody = player.GetComponent<Rigidbody>();
