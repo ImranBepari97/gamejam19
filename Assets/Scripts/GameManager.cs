@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
     private void FadeOut()
     {
         Color newcolor = fader.color;
-        newcolor.a -= 0.1f;
+        newcolor.a -= 0.05f;
         fader.color = newcolor;
     }
 
@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
     private void FadeIn()
     {
         Color newcolor = fader.color;
-        newcolor.a += 0.1f;
+        newcolor.a += 0.05f;
         fader.color = newcolor;
     }
 
@@ -83,10 +83,10 @@ public class GameManager : MonoBehaviour
             //fade out current scene
             fader.gameObject.SetActive(true);
             ChangingScenes = true;
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 20; i++)
             {
                 FadeIn();
-                yield return new WaitForSeconds(0.05f);
+                yield return new WaitForSeconds(0.0025f);
             }
             //load next scene
             SceneManager.LoadScene(scene);
@@ -95,10 +95,10 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
 
             //fade in newly loaded scene
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 20; i++)
             {
                 FadeOut();
-                yield return new WaitForSeconds(0.05f);
+                yield return new WaitForSeconds(0.0025f);
             }
             ChangingScenes = false;
             fader.gameObject.SetActive(false) ;
