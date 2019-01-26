@@ -5,14 +5,17 @@ using UnityEngine;
 public class Mess : Interactable
 {
     public float CleanUpTime;
-    public float MessPoints;
-    
-    
+    public int MessPoints;
+    public ToolName RecieveBonusFrom;
+    public float BonusMultiplier;
+    public bool IsDestructable;    
     private PlayerInteract player;
+    private GameManager GameManager;
     
     // Start is called before the first frame update
     void Start()
     {
+        GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 		base.Start();
     }
 
@@ -31,11 +34,18 @@ public class Mess : Interactable
     /// <param name="thisplayer"></param>
     public void CleanMess(PlayerInteract thisplayer)
     {
+        
+        if (thisplayer.currentTool == RecieveBonusFrom && RecieveBonusFrom != ToolName.None)
+        {
+            CleanUpTime = CleanUpTime / BonusMultiplier;
+          
+        }
         //Player UI clean progress bar
         StartCoroutine(BeingCleaned());
         print("StartClean");
         player = thisplayer;
-
+        thisplayer.gameObject.transform.GetChild(1).gameObject.SetActive(true);
+        thisplayer.gameObject.transform.GetChild(1).GetComponent<castbar>().Activated(CleanUpTime);
     }
 
     /// <summary>
@@ -47,9 +57,23 @@ public class Mess : Interactable
         //lock player movement
         yield return new WaitForSeconds(CleanUpTime);
         print("EndClean");
+        if (IsDestructable)
+        {
+            SpawnMoreMess();
+        }
+        else
+        {
+            GameManager.AddCleanScore(MessPoints);
+        }
         player.FinishClean(); //reactivates player movement
         //add points to global score
         //stop clean progress bar
         
+    }
+
+    public void SpawnMoreMess()
+    {
+        transform.parent.GetChild(1).gameObject.SetActive(true);
+        GameManager.AddMessScore(MessPoints);
     }
 }

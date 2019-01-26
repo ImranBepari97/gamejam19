@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     private bool ChangingScenes;
     public SfxPlayer sfx;
     public MusicPlayer mp;
+    private int MessScore;
+    private int CleanScore;
     
     // Start is called before the first frame update
     void Awake()
@@ -29,6 +31,16 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+    }
+
+    public void AddMessScore(int score)
+    {
+        MessScore += score;
+    }
+
+    public void AddCleanScore(int score)
+    {
+        CleanScore += score;
     }
 
     // Update is called once per frame

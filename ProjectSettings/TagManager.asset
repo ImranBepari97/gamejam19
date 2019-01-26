@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CleanPlayer
   - Interactable
+  - MessPlayer
   layers:
   - Default
   - TransparentFX

@@ -13,12 +13,12 @@ public class MainMenuScript : MonoBehaviour
 
     public void MuteSfx()
     {
-        GameObject.Find("GameManager").GetComponent<GameManager>().sfx.IsMuted = true;
+        GameObject.Find("GameManager").GetComponent<GameManager>().sfx.ToggleSfx();
     }
 
     public void MuteMusic()
     {
-        GameObject.Find("GameManager").GetComponent<GameManager>().mp.IsMuted = true;
+        GameObject.Find("GameManager").GetComponent<GameManager>().mp.ToggleMusic();
     }
 }
    

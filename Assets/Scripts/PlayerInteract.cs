@@ -10,6 +10,7 @@ public class PlayerInteract : MonoBehaviour
     private bool IsCleaning; //to avoid interacting multiple times on same object
     // Start is called before the first frame update
     public ToolName currentTool;
+    public bool CleaningPlayer;
 
     void Start()
     {
@@ -19,6 +20,10 @@ public class PlayerInteract : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (IsCleaning)
+        {
+            GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+        }
         if (Input.GetButtonDown("Fire1") && !IsCleaning) //will need to change "Fire1" dependant on player number
         {
             if (currentInteractObject != null && currentInteractObject.GetComponent<Mess>()) //if interacting object within range
@@ -58,6 +63,14 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerStay(Collider other) //using on stay rather than enter to get other objects in range when one is finished interacting with
     {
+        if (CleaningPlayer && other.gameObject.CompareTag("MessPlayer"))
+        {
+            return;
+        }
+        if (!CleaningPlayer && other.gameObject.CompareTag("CleanPlayer"))
+        {
+            return;
+        }
 		Interactable inter;
 		if (inter = other.gameObject.GetComponent<Interactable>()) {
             if (currentInteractObject == null)
@@ -80,7 +93,7 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerExit(Collider other) 
     {
-        if (other.gameObject == currentInteractObject) //if no longer in range of object 
+        if (other.gameObject == currentInteractObject && !IsCleaning) //if no longer in range of object 
         {
             currentInteractObject.GetComponent<Interactable>().PlayerOutofRange(); //reset object interact settings
             currentInteractObject = null; //clear current object
