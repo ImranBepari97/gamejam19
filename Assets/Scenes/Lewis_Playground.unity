@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CountDownText: {fileID: 698780651}
+  Countdown: {fileID: 8300000, guid: 107a49a8ff2a5ab4cae1a359474d76ab, type: 3}
 --- !u!4 &180406396
 Transform:
   m_ObjectHideFlags: 0
@@ -955,6 +956,26 @@ PrefabInstance:
       propertyPath: BonusMultiplier
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: cleanUpTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: messPoints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: bonusMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: recieveBonusFrom
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4e5c8f5b4415a4c9da23b34d17b080, type: 3}
 --- !u!1 &1188134181
@@ -1329,6 +1350,16 @@ PrefabInstance:
         type: 3}
       propertyPath: BonusMultiplier
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: cleanUpTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: messPoints
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4e5c8f5b4415a4c9da23b34d17b080, type: 3}
@@ -1725,6 +1756,16 @@ PrefabInstance:
       propertyPath: MessPoints
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: cleanUpTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: messPoints
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4e5c8f5b4415a4c9da23b34d17b080, type: 3}
 --- !u!1 &1711253644 stripped
@@ -2072,11 +2113,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normal: {fileID: 0}
   glowing: {fileID: 0}
-  cleanUpTime: 0
-  messPoints: 0
+  cleanUpTime: 5
+  messPoints: 10
   recieveBonusFrom: 0
   bonusMultiplier: 0
-  isDestructable: 0
+  isDestructable: 1
 --- !u!1001 &1942878008
 PrefabInstance:
   m_ObjectHideFlags: 0
