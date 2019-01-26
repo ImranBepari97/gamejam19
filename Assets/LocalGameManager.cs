@@ -53,6 +53,7 @@ public class LocalGameManager : MonoBehaviour
 
     IEnumerator CountDown()
     {
+        GameManager.ResetScores();
         foreach (PlayerMovement player in Players) player.enabled = false;
         FindObjectOfType<GameTimer>().enabled = false;
         CountDownText.text = "Get Ready!";

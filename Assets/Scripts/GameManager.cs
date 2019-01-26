@@ -14,7 +14,13 @@ public class GameManager : MonoBehaviour
     public MusicPlayer mp;
     private int MessScore;
     private int CleanScore;
-    
+
+
+    public void ResetScores()
+    {
+        MessScore = 0;
+        CleanScore = 0;
+    }
     // Start is called before the first frame update
     void Awake()
     {
