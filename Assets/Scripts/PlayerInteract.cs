@@ -87,6 +87,13 @@ public class PlayerInteract : MonoBehaviour
     public void FinishClean()
     {
         currentInteractObject.SetActive(false); //hide object. This line may change when object is coded more
+        if (currentTool != null)
+        {
+        if (currentTool.toolName == ToolName.Mess)
+            {
+                MyUI.EquipItem(ToolName.None);
+            }
+        }
         currentInteractObject = null; //clear current interact object to detect new one
         playerMovement.enabled = true; //enable movement
         isCleaning = false; //player is not cleaning up anymore
