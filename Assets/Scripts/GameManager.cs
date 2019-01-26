@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void LoadNextScene()
     {
-        if (CurrentScene == 1) //should be set to max number of scenes in build settings
+        if (CurrentScene == 2) //should be set to max number of scenes in build settings
         {
             CurrentScene = -1; //loops back round to menu
         }
@@ -104,6 +104,10 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(scene);
             yield return new WaitForSeconds(0);
             CurrentScene = scene;
+            if (scene == 2)
+            {
+                StartCoroutine(EndScreen());
+            }
             yield return new WaitForSeconds(0.1f);
 
             //fade in newly loaded scene
@@ -114,9 +118,32 @@ public class GameManager : MonoBehaviour
             }
             ChangingScenes = false;
             fader.gameObject.SetActive(false) ;
+
             //start game here (May want a 3 2 1 counter?
         }
 
+    }
+
+
+private IEnumerator EndScreen()
+    {
+        GameObject.Find("CleanerScore").GetComponent<Text>().text = "" + CleanScore;
+        GameObject.Find("MessScore").GetComponent<Text>().text = "" + MessScore;
+        if (CleanScore > MessScore)
+        {
+            GameObject.Find("WinnersText").GetComponent<Text>().text = "Cleaners Win";
+        }else if (CleanScore == MessScore)
+        {
+            GameObject.Find("WinnersText").GetComponent<Text>().text = "Draw!";
+            GameObject.Find("WinnersText").GetComponent<Text>().color = Color.white;
+        }
+        else
+        {
+            GameObject.Find("WinnersText").GetComponent<Text>().text = "Messers Win";
+            GameObject.Find("WinnersText").GetComponent<Text>().color = Color.red;
+        }
+        yield return new WaitForSeconds(10);
+        LoadNextScene();
     }
     
     
