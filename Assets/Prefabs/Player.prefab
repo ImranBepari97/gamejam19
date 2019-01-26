@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentInteractObject: {fileID: 0}
-  currentTool: 0
+  currentTool: {fileID: 0}
   CleaningPlayer: 0
 --- !u!1 &5294424829484367012
 GameObject:
