@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Mess : Interactable
 {
-    public float CleanUpTime;
-    public int MessPoints;
-    public ToolName RecieveBonusFrom;
-    public float BonusMultiplier;
-    public bool IsDestructable;    
+    public float cleanUpTime;
+    public int messPoints;
+    public ToolName recieveBonusFrom;
+    public float bonusMultiplier;
+    public bool isDestructable;    
     private PlayerInteract player;
     private GameManager GameManager;
     
@@ -33,9 +33,9 @@ public class Mess : Interactable
     public void CleanMess(PlayerInteract thisplayer)
     {
         
-        if (thisplayer.currentTool.toolName == RecieveBonusFrom && RecieveBonusFrom != ToolName.None)
+        if (thisplayer.currentTool.toolName == recieveBonusFrom && recieveBonusFrom != ToolName.None)
         {
-            CleanUpTime = CleanUpTime / BonusMultiplier;
+            cleanUpTime = cleanUpTime / bonusMultiplier;
           
         }
         //Player UI clean progress bar
@@ -43,7 +43,7 @@ public class Mess : Interactable
         print("StartClean");
         player = thisplayer;
         thisplayer.gameObject.transform.GetChild(1).gameObject.SetActive(true);
-        thisplayer.gameObject.transform.GetChild(1).GetComponent<castbar>().Activated(CleanUpTime);
+        thisplayer.gameObject.transform.GetChild(1).GetComponent<Castbar>().Activated(cleanUpTime);
     }
 
     /// <summary>
@@ -53,15 +53,15 @@ public class Mess : Interactable
     IEnumerator BeingCleaned()
     {
         //lock player movement
-        yield return new WaitForSeconds(CleanUpTime);
+        yield return new WaitForSeconds(cleanUpTime);
         print("EndClean");
-        if (IsDestructable)
+        if (isDestructable)
         {
             SpawnMoreMess();
         }
         else
         {
-            GameManager.AddCleanScore(MessPoints);
+            GameManager.AddCleanScore(messPoints);
         }
         player.FinishClean(); //reactivates player movement
         //add points to global score
@@ -72,6 +72,6 @@ public class Mess : Interactable
     public void SpawnMoreMess()
     {
         transform.parent.GetChild(1).gameObject.SetActive(true);
-        GameManager.AddMessScore(MessPoints);
+        GameManager.AddMessScore(messPoints);
     }
 }

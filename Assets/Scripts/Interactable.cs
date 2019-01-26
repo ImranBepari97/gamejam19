@@ -7,12 +7,12 @@ public class Interactable : MonoBehaviour
 
 	public Material normal;
 	public Material glowing;
-	private Renderer MyRender;
+	private Renderer myRender;
     // Start is called before the first frame update
     public void Start()
     {
-		MyRender = GetComponent<Renderer>();
-		normal = MyRender.material;
+		myRender = GetComponent<Renderer>();
+		normal = myRender.material;
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class Interactable : MonoBehaviour
 	/// </summary>
 	public void PlayerInRange()
 	{
-		MyRender.material = glowing;
+		myRender.material = glowing;
 	}
 
 	/// <summary>
@@ -34,7 +34,7 @@ public class Interactable : MonoBehaviour
 	/// </summary>
 	public void PlayerOutofRange() 
 	{
-		MyRender.material = normal;
+		myRender.material = normal;
 	}
 
 }
