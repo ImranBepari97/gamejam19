@@ -1,16 +1,69 @@
 fileFormatVersion: 2
-guid: 6ebbf728f36fb864b895694062cd2891
+guid: f87bb8ac38cce7d4dad7cec63955a703
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: armchair
+    100004: Camera
+    100006: chair
+    100008: Empty
+    100010: Empty chair
+    100012: Light
+    100014: Plane
+    100016: Plane.001
+    100018: Plane.002
+    100020: sofa
+    100022: wall
+    100024: wall.001
+    100026: wall.002
     400000: //RootNode
+    400002: armchair
+    400004: Camera
+    400006: chair
+    400008: Empty
+    400010: Empty chair
+    400012: Light
+    400014: Plane
+    400016: Plane.001
+    400018: Plane.002
+    400020: sofa
+    400022: wall
+    400024: wall.001
+    400026: wall.002
+    2000000: Camera
     2100000: wood
     2100002: seat material
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cube
-    4300002: chair
+    2100004: Material.001
+    2100006: Material.002
+    2100008: Carpet
+    2300000: armchair
+    2300002: chair
+    2300004: Plane
+    2300006: Plane.001
+    2300008: Plane.002
+    2300010: sofa
+    2300012: wall
+    2300014: wall.001
+    2300016: wall.002
+    2300018: //RootNode
+    3300000: armchair
+    3300002: chair
+    3300004: Plane
+    3300006: Plane.001
+    3300008: Plane.002
+    3300010: sofa
+    3300012: wall
+    3300014: wall.001
+    3300016: wall.002
+    3300018: //RootNode
+    4300000: chair
+    4300002: sofa
+    4300004: wall
+    4300006: Plane
+    4300008: Plane.001
+    4300010: armchair
+    10800000: Light
   externalObjects: {}
   materials:
     importMaterials: 1
