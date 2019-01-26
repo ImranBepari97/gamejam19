@@ -14,7 +14,13 @@ public class GameManager : MonoBehaviour
     public MusicPlayer mp;
     private int MessScore;
     private int CleanScore;
-    
+
+
+    public void ResetScores()
+    {
+        MessScore = 0;
+        CleanScore = 0;
+    }
     // Start is called before the first frame update
     void Awake()
     {
@@ -54,7 +60,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void LoadNextScene()
     {
-        if (CurrentScene == 2) //should be set to max number of scenes in build settings
+        if (CurrentScene == 3) //should be set to max number of scenes in build settings
         {
             CurrentScene = -1; //loops back round to menu
         }
@@ -104,7 +110,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(scene);
             yield return new WaitForSeconds(0);
             CurrentScene = scene;
-            if (scene == 2)
+            if (scene == 3)
             {
                 StartCoroutine(EndScreen());
             }
