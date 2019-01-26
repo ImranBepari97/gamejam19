@@ -11,10 +11,17 @@ public class PlayerInteract : MonoBehaviour
     // Start is called before the first frame update
     public CleaningTool currentTool;
     public bool cleaningPlayer;
+    public PlayerUI MyUI;
+    //public int PlayerNumber;
 
     void Start()
     {
-        playerMovement = GetComponent<PlayerMovement>();   
+        playerMovement = GetComponent<PlayerMovement>();
+        if (MyUI != null)
+        {
+            MyUI.Actiaved(cleaningPlayer);
+        }
+        
     }
 
     // Update is called once per frame
@@ -48,8 +55,18 @@ public class PlayerInteract : MonoBehaviour
             {
                 currentTool.DetachFromPlayer(this);
                 currentTool = null;
+
             }
-		}
+            if (MyUI != null)
+            {
+                if (currentTool == null)
+                {
+                    MyUI.EquipItem(ToolName.None);
+                    return;
+                }
+                MyUI.EquipItem(currentTool.toolName);
+            }
+        }
     }
 
     /// <summary>
