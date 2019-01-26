@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 59989f83f05984b4dbd7590717b9850d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature.001
+    100002: Camera
+    100004: fractured vase
+    100006: fractured vase.001
+    100008: head
+    100010: head_end
+    100012: Lamp
+    100014: lower body
+    100016: lower body_end
+    100018: Mop
+    100020: Plane
+    100022: Plane.001
+    100024: Plane.002
+    100026: Root
+    100028: Sphere.001
+    100030: Sun
+    100032: upper body
+    100034: Vase
+    100036: //RootNode
+    100038: wall
+    400000: Armature.001
+    400002: Camera
+    400004: fractured vase
+    400006: fractured vase.001
+    400008: head
+    400010: head_end
+    400012: Lamp
+    400014: lower body
+    400016: lower body_end
+    400018: Mop
+    400020: Plane
+    400022: Plane.001
+    400024: Plane.002
+    400026: Root
+    400028: Sphere.001
+    400030: Sun
+    400032: upper body
+    400034: Vase
+    400036: //RootNode
+    400038: wall
+    2000000: Camera
+    2100000: vase
+    2100002: No Name
+    2100004: Material.001
+    2100006: mop handle
+    2100008: mop dark
+    2100010: mop sponge
+    2100012: clothes.003
+    2100014: Skin.003
+    2100016: Material.003
+    2300000: fractured vase
+    2300002: Mop
+    2300004: Plane
+    2300006: Plane.001
+    2300008: Plane.002
+    2300010: Vase
+    2300012: wall
+    2300014: //RootNode
+    3300000: fractured vase
+    3300002: Mop
+    3300004: Plane
+    3300006: Plane.001
+    3300008: Plane.002
+    3300010: Vase
+    3300012: wall
+    3300014: //RootNode
+    4300000: fractured vase
+    4300002: Plane.002
+    4300004: Plane.001
+    4300006: Plane
+    4300008: Mop
+    4300010: Sphere.001
+    4300012: wall
+    4300014: Vase
+    7400000: Armature.001|ArmatureAction.000
+    7400002: Armature.001|ArmatureAction.001
+    7400004: Armature.001|ArmatureAction.002
+    7400006: Armature.001|ArmatureAction.003
+    9500000: //RootNode
+    10800000: Lamp
+    10800002: Sun
+    13700000: Sphere.001
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 17ced5ac41305e54b8703acb3458c24b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
