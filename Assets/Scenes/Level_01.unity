@@ -17144,5 +17144,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6118837450229433833, guid: 41574b5ac8eafb8439459ed0cf3ad4be,
+        type: 3}
+      propertyPath: m_TagString
+      value: MessPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119519201957917187, guid: 41574b5ac8eafb8439459ed0cf3ad4be,
+        type: 3}
+      propertyPath: m_TagString
+      value: CleanPlayer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41574b5ac8eafb8439459ed0cf3ad4be, type: 3}
