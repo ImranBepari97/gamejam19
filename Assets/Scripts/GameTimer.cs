@@ -28,7 +28,7 @@ public class GameTimer : MonoBehaviour
 
         if(currentTime < 0)
         {
-            //Add GameOver functionality.
+            GameObject.Find("GameManager").GetComponent<GameManager>().LoadNextScene();
             //GameOver()
         }
     }
