@@ -244,7 +244,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: bd44a80ff13970349aa6b41a9a89890f, type: 3}
-    m_FontSize: 69
+    m_FontSize: 65
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -1785,16 +1785,16 @@ PrefabInstance:
       propertyPath: playerNum
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 900048431408226538, guid: aa707ea696f2d3445a96640317a5e387,
-        type: 3}
-      propertyPath: cleaningPlayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3648117417174507551, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a3582ad23d38b1c4aafccb4ca5dee2f3, type: 2}
+    - target: {fileID: 900048431408226538, guid: aa707ea696f2d3445a96640317a5e387,
+        type: 3}
+      propertyPath: cleaningPlayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa707ea696f2d3445a96640317a5e387, type: 3}
 --- !u!1001 &877463130
@@ -3228,16 +3228,16 @@ PrefabInstance:
       propertyPath: playerNum
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 900048431408226538, guid: aa707ea696f2d3445a96640317a5e387,
-        type: 3}
-      propertyPath: cleaningPlayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3648117417174507551, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
+    - target: {fileID: 900048431408226538, guid: aa707ea696f2d3445a96640317a5e387,
+        type: 3}
+      propertyPath: cleaningPlayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa707ea696f2d3445a96640317a5e387, type: 3}
 --- !u!1 &1311158356
@@ -5707,21 +5707,21 @@ PrefabInstance:
       propertyPath: playerNum
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 3590831494630531600, guid: aa707ea696f2d3445a96640317a5e387,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 900048431408226538, guid: aa707ea696f2d3445a96640317a5e387,
-        type: 3}
-      propertyPath: cleaningPlayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3648117417174507551, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9d80d85eba325004ebbe2d5c82682079, type: 2}
+    - target: {fileID: 900048431408226538, guid: aa707ea696f2d3445a96640317a5e387,
+        type: 3}
+      propertyPath: cleaningPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3590831494630531600, guid: aa707ea696f2d3445a96640317a5e387,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa707ea696f2d3445a96640317a5e387, type: 3}
 --- !u!1 &1988638589 stripped
