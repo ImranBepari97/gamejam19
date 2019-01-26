@@ -7,10 +7,10 @@ public class PlayerInteract : MonoBehaviour
 {
     public GameObject currentInteractObject; //what object are we interacting with
     private PlayerMovement playerMovement; //to lock movement
-    private bool IsCleaning; //to avoid interacting multiple times on same object
+    private bool isCleaning; //to avoid interacting multiple times on same object
     // Start is called before the first frame update
     public CleaningTool currentTool;
-    public bool CleaningPlayer;
+    public bool cleaningPlayer;
 
     void Start()
     {
@@ -20,23 +20,23 @@ public class PlayerInteract : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsCleaning)
+        if (isCleaning)
         {
             GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         }
-        if (Input.GetButtonDown("Fire1") && !IsCleaning) //will need to change "Fire1" dependant on player number
+        if (Input.GetButtonDown("Fire1") && !isCleaning) //will need to change "Fire1" dependant on player number
         {
             if (currentInteractObject != null && currentInteractObject.GetComponent<Mess>()) //if interacting object within range
             {
                 playerMovement.enabled = false; //deactivate movement
-                IsCleaning = true;
+                isCleaning = true;
                 currentInteractObject.GetComponent<Mess>().CleanMess(this); //let object know its cleaning
                 GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0); //zero out velocity
             }
         }
 
 		//pick up an item like a mop
-		if(Input.GetButtonDown("Fire2") && !IsCleaning) 
+		if(Input.GetButtonDown("Fire2") && !isCleaning) 
 		{
 			if (currentInteractObject != null && currentTool == null) //if interacting object within range
 			{
@@ -60,17 +60,17 @@ public class PlayerInteract : MonoBehaviour
         currentInteractObject.SetActive(false); //hide object. This line may change when object is coded more
         currentInteractObject = null; //clear current interact object to detect new one
         playerMovement.enabled = true; //enable movement
-        IsCleaning = false; //player is not cleaning up anymore
+        isCleaning = false; //player is not cleaning up anymore
     }
 
 
     private void OnTriggerStay(Collider other) //using on stay rather than enter to get other objects in range when one is finished interacting with
     {
-        if (CleaningPlayer && other.gameObject.CompareTag("MessPlayer"))
+        if (cleaningPlayer && other.gameObject.CompareTag("MessPlayer"))
         {
             return;
         }
-        if (!CleaningPlayer && other.gameObject.CompareTag("CleanPlayer"))
+        if (!cleaningPlayer && other.gameObject.CompareTag("CleanPlayer"))
         {
             return;
         }
@@ -96,7 +96,7 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerExit(Collider other) 
     {
-        if (other.gameObject == currentInteractObject && !IsCleaning) //if no longer in range of object 
+        if (other.gameObject == currentInteractObject && !isCleaning) //if no longer in range of object 
         {
             currentInteractObject.GetComponent<Interactable>().PlayerOutofRange(); //reset object interact settings
             currentInteractObject = null; //clear current object
