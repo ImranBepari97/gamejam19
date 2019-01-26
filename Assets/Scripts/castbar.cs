@@ -27,7 +27,7 @@ public class Castbar : MonoBehaviour
         {
             remainingTime -= Time.deltaTime;
             float timegone = (maxTime - remainingTime);
-            float percentage = Mathf.Clamp((timegone / maxTime), 0, 100);
+            float percentage = Mathf.Clamp((timegone / maxTime), 0.01f, 100);
             transform.localScale = new Vector2(maxSize * percentage, transform.localScale.y);
         }
         else
@@ -39,8 +39,10 @@ public class Castbar : MonoBehaviour
 
     public void Activated(float time)
     {
+        time = Mathf.Clamp(time, 0.01f, 25);
         remainingTime = time;
         maxTime = time;
+        print(time);
         background.SetActive(true);
     }
 

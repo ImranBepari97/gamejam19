@@ -10,16 +10,16 @@ public class MainMenuScript : MonoBehaviour
     {
         GameObject.Find("GameManager").GetComponent<GameManager>().LoadNextScene();
     }
+
+
+public void MuteSfx()
+{
+    GameObject.Find("GameManager").GetComponent<GameManager>().sfx.ToggleSfx();
 }
 
-//    public void MuteSfx()
-//    {
-//        GameObject.Find("GameManager").GetComponent<GameManager>().sfx.ToggleSfx();
-//    }
+public void MuteMusic()
+{
+    GameObject.Find("GameManager").GetComponent<GameManager>().mp.ToggleMusic();
+}
+}
 
-//    public void MuteMusic()
-//    {
-//        GameObject.Find("GameManager").GetComponent<GameManager>().mp.ToggleMusic();
-//    }
-//}
-   

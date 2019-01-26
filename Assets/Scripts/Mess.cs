@@ -46,8 +46,12 @@ public class Mess : Interactable
 
         if (thisplayer.currentTool != null)
         {
-            if (thisplayer.currentTool.toolName == recieveBonusFrom && recieveBonusFrom != ToolName.None)
+            if ((thisplayer.currentTool.toolName == recieveBonusFrom) && (recieveBonusFrom != ToolName.None))
             {
+                if (bonusMultiplier == 0)
+                {
+                    bonusMultiplier = 2;
+                }
                 cleanUpTime = cleanUpTime / bonusMultiplier;
 
             }
