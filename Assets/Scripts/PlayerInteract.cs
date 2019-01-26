@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerInteract : MonoBehaviour
 {
-    public GameObject CurrentInteractObject; //what object are we interacting with
-    private PlayerMovement playermovement; //to lock movement
+    public GameObject currentInteractObject; //what object are we interacting with
+    private PlayerMovement playerMovement; //to lock movement
     private bool IsCleaning; //to avoid interacting multiple times on same object
     // Start is called before the first frame update
+    public ToolName currentTool;
+
     void Start()
     {
-        playermovement = GetComponent<PlayerMovement>();   
+        playerMovement = GetComponent<PlayerMovement>();   
     }
 
     // Update is called once per frame
@@ -18,11 +21,11 @@ public class PlayerInteract : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && !IsCleaning) //will need to change "Fire1" dependant on player number
         {
-            if (CurrentInteractObject != null) //if interacting object within range
+            if (currentInteractObject != null && currentInteractObject.GetComponent<Mess>()) //if interacting object within range
             {
-                playermovement.enabled = false; //deactivate movement
+                playerMovement.enabled = false; //deactivate movement
                 IsCleaning = true;
-                CurrentInteractObject.GetComponent<Mess>().CleanMess(this); //let object know its cleaning
+                currentInteractObject.GetComponent<Mess>().CleanMess(this); //let object know its cleaning
                 GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0); //zero out velocity
             }
         }
@@ -30,10 +33,13 @@ public class PlayerInteract : MonoBehaviour
 		//pick up an item like a mop
 		if(Input.GetButtonDown("Fire2") && !IsCleaning) 
 		{
-			if (CurrentInteractObject != null) //if interacting object within range
+			if (currentInteractObject != null) //if interacting object within range
 			{
-				//if() {
-				//}
+                
+				if(currentInteractObject.GetComponent<CleaningTool>())
+                {
+                    currentInteractObject.GetComponent<CleaningTool>().AttachToPlayer(this);
+                }
 			}
 		}
     }
@@ -43,9 +49,9 @@ public class PlayerInteract : MonoBehaviour
     /// </summary>
     public void FinishClean()
     {
-        CurrentInteractObject.SetActive(false); //hide object. This line may change when object is coded more
-        CurrentInteractObject = null; //clear current interact object to detect new one
-        playermovement.enabled = true; //enable movement
+        currentInteractObject.SetActive(false); //hide object. This line may change when object is coded more
+        currentInteractObject = null; //clear current interact object to detect new one
+        playerMovement.enabled = true; //enable movement
         IsCleaning = false; //player is not cleaning up anymore
     }
 
@@ -54,20 +60,30 @@ public class PlayerInteract : MonoBehaviour
     {
 		Interactable inter;
 		if (inter = other.gameObject.GetComponent<Interactable>()) {
-            if (CurrentInteractObject == null)
+            if (currentInteractObject == null)
             {
-                CurrentInteractObject = other.gameObject;
-				inter.PlayerInRange();
+                //if youre a cleaning tool and in use, DONT GLOW
+                CleaningTool tool;
+                if (tool = other.gameObject.GetComponent<CleaningTool>())
+                {
+                    if(tool.player != null)
+                    {
+                        return;
+                    }
+                }
+
+                currentInteractObject = other.gameObject;
+                inter.PlayerInRange();
             }
         }
     }
 
     private void OnTriggerExit(Collider other) 
     {
-        if (other.gameObject == CurrentInteractObject) //if no longer in range of object 
+        if (other.gameObject == currentInteractObject) //if no longer in range of object 
         {
-            CurrentInteractObject.GetComponent<Mess>().PlayerOutofRange(); //reset object interact settings
-            CurrentInteractObject = null; //clear current object
+            currentInteractObject.GetComponent<Interactable>().PlayerOutofRange(); //reset object interact settings
+            currentInteractObject = null; //clear current object
         }
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-    private bool IsMuted;
+    public bool IsMuted;
     private AudioSource MusicOne;
     private AudioSource MusicTwo;
     // Start is called before the first frame update
