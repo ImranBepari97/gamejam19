@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TestMenu.unity
     guid: 4d60c17199534ff4abd4647cb683b345
   - enabled: 1
+    path: Assets/Scenes/Interactive Menu.unity
+    guid: 613ecca223ff31c4086b987375eef6fe
+  - enabled: 1
     path: Assets/Scenes/Level_01.unity
     guid: c585592fabddbe34eaf6f08d36b80d7e
   - enabled: 1

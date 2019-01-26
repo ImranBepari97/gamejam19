@@ -12,12 +12,18 @@ public class LocalGameManager : MonoBehaviour
     public Text CountDownText;
     private PlayerMovement[] Players;
     public AudioClip Countdown;
+    public bool demolevel;
     // Start is called before the first frame update
     void Start()
     {
         Players = FindObjectsOfType<PlayerMovement>();
         GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         Sfx = GameObject.Find("SfxPlayer").GetComponent<SfxPlayer>();
+        if (demolevel)
+        {
+            CountDownText.text = "Game Starts In:";
+            return;
+        }
         StartCoroutine(CountDown());
     }
 
@@ -29,6 +35,11 @@ public class LocalGameManager : MonoBehaviour
 
     public void GameOver()
     {
+        if (demolevel)
+        {
+            GameManager.LoadNextScene();
+            return;
+        }
         CountDownText.text = "Oh Sh*t! Mum's back!";
         StartCoroutine(EndTime());
         Sfx.PlaySfx(Whistle);
