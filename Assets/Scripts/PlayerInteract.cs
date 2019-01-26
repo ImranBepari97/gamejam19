@@ -9,7 +9,7 @@ public class PlayerInteract : MonoBehaviour
     private PlayerMovement playerMovement; //to lock movement
     private bool IsCleaning; //to avoid interacting multiple times on same object
     // Start is called before the first frame update
-    public ToolName currentTool;
+    public CleaningTool currentTool;
     public bool CleaningPlayer;
 
     void Start()
@@ -38,14 +38,17 @@ public class PlayerInteract : MonoBehaviour
 		//pick up an item like a mop
 		if(Input.GetButtonDown("Fire2") && !IsCleaning) 
 		{
-			if (currentInteractObject != null) //if interacting object within range
+			if (currentInteractObject != null && currentTool == null) //if interacting object within range
 			{
-                
 				if(currentInteractObject.GetComponent<CleaningTool>())
                 {
                     currentInteractObject.GetComponent<CleaningTool>().AttachToPlayer(this);
                 }
-			}
+			} else if(currentTool != null)
+            {
+                currentTool.DetachFromPlayer(this);
+                currentTool = null;
+            }
 		}
     }
 

@@ -22,10 +22,8 @@ public class Mess : Interactable
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-
-
     
 
     /// <summary>
@@ -35,7 +33,7 @@ public class Mess : Interactable
     public void CleanMess(PlayerInteract thisplayer)
     {
         
-        if (thisplayer.currentTool == RecieveBonusFrom && RecieveBonusFrom != ToolName.None)
+        if (thisplayer.currentTool.toolName == RecieveBonusFrom && RecieveBonusFrom != ToolName.None)
         {
             CleanUpTime = CleanUpTime / BonusMultiplier;
           

@@ -32,22 +32,32 @@ public class CleaningTool : Interactable
     public void AttachToPlayer(PlayerInteract activatingPlayer)
     {
         player = activatingPlayer;
-        activatingPlayer.currentTool = toolName;
+        activatingPlayer.currentTool = this;
         rb.position = player.transform.GetChild(0).position;
-        joint = gameObject.AddComponent<FixedJoint>();
-        joint.connectedBody = player.GetComponent<Rigidbody>();
+        //rb.rotation = Quaternion.Euler(rb.rotation.x , player.transform.rotation.y, rb.rotation.x);
+        StartCoroutine(MakeJoint());
+       
 
     }
 
     public void DetachFromPlayer(PlayerInteract activatingPlayer)
     {
-        player.currentTool = ToolName.None;
+        player.currentTool = null;
         player = null;
 
         if(joint != null)
         {
             Destroy(joint);
         }
-        
+
+        rb.velocity = new Vector3(0,0,0);
+
+    }
+
+    IEnumerator MakeJoint()
+    {
+        yield return new WaitForSeconds(0.05f);
+        joint = gameObject.AddComponent<FixedJoint>();
+        joint.connectedBody = player.GetComponent<Rigidbody>();
     }
 }
