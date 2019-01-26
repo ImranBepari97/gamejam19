@@ -609,11 +609,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normal: {fileID: 0}
   glowing: {fileID: 0}
-  CleanUpTime: 1
-  MessPoints: 0
-  RecieveBonusFrom: 0
-  BonusMultiplier: 0
-  IsDestructable: 0
+  cleanUpTime: 0
+  messPoints: 0
+  recieveBonusFrom: 0
+  bonusMultiplier: 0
+  isDestructable: 0
+  WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  TiledMultiplier: 0
+  CarpetMultiplier: 0
 --- !u!1001 &1988638588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -634,7 +639,7 @@ PrefabInstance:
     - target: {fileID: 3590831494630531602, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: 0.759
       objectReference: {fileID: 0}
     - target: {fileID: 3590831494630531602, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
@@ -686,11 +691,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a3582ad23d38b1c4aafccb4ca5dee2f3, type: 2}
-    - target: {fileID: 3590831494630531600, guid: aa707ea696f2d3445a96640317a5e387,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa707ea696f2d3445a96640317a5e387, type: 3}
 --- !u!1 &1988638589 stripped

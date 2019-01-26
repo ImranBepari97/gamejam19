@@ -31,7 +31,7 @@ public class PlayerInteract : MonoBehaviour
         {
             GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         }
-        if (Input.GetButtonDown("Fire1") && !isCleaning) //will need to change "Fire1" dependant on player number
+        if (Input.GetButtonDown("Use" + playerMovement.playerNum) && !isCleaning) //will need to change "Fire1" dependant on player number
         {
             if (currentInteractObject == null)
             {
@@ -55,7 +55,7 @@ public class PlayerInteract : MonoBehaviour
         }
 
 		//pick up an item like a mop
-		if(Input.GetButtonDown("Fire2") && !isCleaning) 
+		if(Input.GetButtonDown("Pickup" + playerMovement.playerNum) && !isCleaning) 
 		{
 			if (currentInteractObject != null && currentTool == null) //if interacting object within range
 			{
