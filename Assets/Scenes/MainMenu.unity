@@ -507,16 +507,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8394825273984112995, guid: ce14fe1d73fde2443b6d9bd27f3c5538,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8866115441129286634, guid: ce14fe1d73fde2443b6d9bd27f3c5538,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: d62547a7cfb82ee4b83b1e0fc032b822, type: 3}
+    - target: {fileID: 8394825273984112995, guid: ce14fe1d73fde2443b6d9bd27f3c5538,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce14fe1d73fde2443b6d9bd27f3c5538, type: 3}
 --- !u!1 &826176943
@@ -598,8 +598,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 848030802}
-        m_MethodName: ToggleMusic
+      - m_Target: {fileID: 71708107}
+        m_MethodName: MuteMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -648,18 +648,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826176943}
   m_CullTransparentMesh: 0
---- !u!114 &848030802 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1512859699733880154, guid: ce14fe1d73fde2443b6d9bd27f3c5538,
-    type: 3}
-  m_PrefabInstance: {fileID: 455853051}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31961c90dab3cc444a44b23b618d3eef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &881561063
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,18 +714,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1005597689 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6324782472673268840, guid: ce14fe1d73fde2443b6d9bd27f3c5538,
-    type: 3}
-  m_PrefabInstance: {fileID: 455853051}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 139ed8ffc933a534a8c8b9cabd3c306b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1053484265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,8 +1185,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1005597689}
-        m_MethodName: ToggleSfx
+      - m_Target: {fileID: 71708107}
+        m_MethodName: MuteSfx
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

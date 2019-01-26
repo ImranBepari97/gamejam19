@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameTimer : MonoBehaviour
 {
     float currentTime = 0f;
-    float startingTime = 60f;
+    public float startingTime;
 
     [SerializeField] Text countdownText;
 
@@ -26,9 +26,10 @@ public class GameTimer : MonoBehaviour
         countdownText.text = tempTime + "";
 
 
-        if(currentTime < 0)
+        if(currentTime <= 0)
         {
-            GameObject.Find("GameManager").GetComponent<GameManager>().LoadNextScene();
+            GameObject.Find("LocalGameManager").GetComponent<LocalGameManager>().GameOver();
+            this.enabled = false;
             //GameOver()
         }
     }

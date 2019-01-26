@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class LocalGameManager : MonoBehaviour
 {
+    public AudioClip Whistle;
     private GameManager GameManager;
     private SfxPlayer Sfx;
     public Text CountDownText;
@@ -23,6 +25,19 @@ public class LocalGameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void GameOver()
+    {
+        CountDownText.text = "Oh Sh*t! Mum's back!";
+        StartCoroutine(EndTime());
+        Sfx.PlaySfx(Whistle);
+    }
+
+    IEnumerator EndTime()
+    {
+        yield return new WaitForSeconds(3);
+        GameManager.LoadNextScene();
     }
 
     IEnumerator CountDown()

@@ -614,6 +614,21 @@ PrefabInstance:
       propertyPath: glowing
       value: 
       objectReference: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: recieveBonusFrom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: messPoints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: cleanUpTime
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4e5c8f5b4415a4c9da23b34d17b080, type: 3}
 --- !u!1 &80402692 stripped
@@ -636,10 +651,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normal: {fileID: 0}
   glowing: {fileID: 0}
-  cleanUpTime: 0
-  messPoints: 0
-  recieveBonusFrom: 0
-  bonusMultiplier: 0
+  cleanUpTime: 5
+  messPoints: 10
+  recieveBonusFrom: 1
+  bonusMultiplier: 2
   isDestructable: 0
   WhatIsGround:
     serializedVersion: 2
@@ -4402,11 +4417,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e4acf8e5f5a37254bb7f6c26d524cbfc, type: 2}
+      objectReference: {fileID: 2100000, guid: a3582ad23d38b1c4aafccb4ca5dee2f3, type: 2}
     - target: {fileID: 3590831494630531601, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
       propertyPath: playerNum
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 900048431408226538, guid: aa707ea696f2d3445a96640317a5e387,
+        type: 3}
+      propertyPath: cleaningPlayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa707ea696f2d3445a96640317a5e387, type: 3}
@@ -5812,6 +5832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 680f98dea164aa34bb9dc7d363eb059b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Whistle: {fileID: 8300000, guid: 3502529db8b2ee14297f85e4e17e5961, type: 3}
   CountDownText: {fileID: 1605186691}
   Countdown: {fileID: 8300000, guid: 107a49a8ff2a5ab4cae1a359474d76ab, type: 3}
 --- !u!4 &850365445
@@ -5981,6 +6002,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa707ea696f2d3445a96640317a5e387, type: 3}
+--- !u!1 &868407899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3590831494630531606, guid: aa707ea696f2d3445a96640317a5e387,
+    type: 3}
+  m_PrefabInstance: {fileID: 868407898}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &871103367 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4812327871190350, guid: 5006909738da1a049ad9d956b4b56f71,
@@ -8559,6 +8586,21 @@ PrefabInstance:
       propertyPath: glowing
       value: 
       objectReference: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: recieveBonusFrom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: messPoints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: cleanUpTime
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4e5c8f5b4415a4c9da23b34d17b080, type: 3}
 --- !u!1001 &1167445640
@@ -8643,6 +8685,21 @@ PrefabInstance:
       propertyPath: glowing
       value: 
       objectReference: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: recieveBonusFrom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: messPoints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: cleanUpTime
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4e5c8f5b4415a4c9da23b34d17b080, type: 3}
 --- !u!1 &1167445641 stripped
@@ -8665,10 +8722,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normal: {fileID: 0}
   glowing: {fileID: 0}
-  cleanUpTime: 0
-  messPoints: 0
-  recieveBonusFrom: 0
-  bonusMultiplier: 0
+  cleanUpTime: 5
+  messPoints: 10
+  recieveBonusFrom: 1
+  bonusMultiplier: 2
   isDestructable: 0
   WhatIsGround:
     serializedVersion: 2
@@ -9881,7 +9938,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
+      objectReference: {fileID: 2100000, guid: e4acf8e5f5a37254bb7f6c26d524cbfc, type: 2}
     - target: {fileID: 3590831494630531601, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
       propertyPath: playerNum
@@ -9890,10 +9947,16 @@ PrefabInstance:
     - target: {fileID: 900048431408226538, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
       propertyPath: cleaningPlayer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa707ea696f2d3445a96640317a5e387, type: 3}
+--- !u!1 &1299211837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3590831494630531606, guid: aa707ea696f2d3445a96640317a5e387,
+    type: 3}
+  m_PrefabInstance: {fileID: 1299211836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1302786297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4812327871190350, guid: 5006909738da1a049ad9d956b4b56f71,
@@ -9938,6 +10001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1318f5aa82bc3d246895c98c1ad82cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingTime: 60
   countdownText: {fileID: 120431948}
 --- !u!114 &1311158358
 MonoBehaviour:
@@ -11283,6 +11347,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4015217150675515888, guid: f757d5aacbdd7da4e8f5ba9b4d453203,
         type: 3}
+      propertyPath: targets.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015217150675515888, guid: f757d5aacbdd7da4e8f5ba9b4d453203,
+        type: 3}
       propertyPath: targets.Array.data[0]
       value: 
       objectReference: {fileID: 612061934}
@@ -11301,6 +11370,16 @@ PrefabInstance:
       propertyPath: cameraMinimumSize
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4015217150675515888, guid: f757d5aacbdd7da4e8f5ba9b4d453203,
+        type: 3}
+      propertyPath: targets.Array.data[2]
+      value: 
+      objectReference: {fileID: 868407899}
+    - target: {fileID: 4015217150675515888, guid: f757d5aacbdd7da4e8f5ba9b4d453203,
+        type: 3}
+      propertyPath: targets.Array.data[3]
+      value: 
+      objectReference: {fileID: 1299211837}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f757d5aacbdd7da4e8f5ba9b4d453203, type: 3}
 --- !u!1 &1495111794 stripped
@@ -11323,8 +11402,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normal: {fileID: 0}
   glowing: {fileID: 0}
-  cleanUpTime: 0
-  messPoints: 0
+  cleanUpTime: 5
+  messPoints: 10
   recieveBonusFrom: 0
   bonusMultiplier: 0
   isDestructable: 0
@@ -12192,6 +12271,21 @@ PrefabInstance:
       propertyPath: glowing
       value: 
       objectReference: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: recieveBonusFrom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: messPoints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: cleanUpTime
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4e5c8f5b4415a4c9da23b34d17b080, type: 3}
 --- !u!1 &1563408322 stripped
@@ -12214,10 +12308,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normal: {fileID: 0}
   glowing: {fileID: 0}
-  cleanUpTime: 0
-  messPoints: 0
-  recieveBonusFrom: 0
-  bonusMultiplier: 0
+  cleanUpTime: 5
+  messPoints: 10
+  recieveBonusFrom: 1
+  bonusMultiplier: 2
   isDestructable: 0
   WhatIsGround:
     serializedVersion: 2
@@ -12409,7 +12503,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -2.6669133, y: -1.7335107}
-  m_SizeDelta: {x: 614.1, y: 321.2}
+  m_SizeDelta: {x: 818.22, y: 440.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1605186691
 MonoBehaviour:
@@ -15180,6 +15274,21 @@ PrefabInstance:
       propertyPath: glowing
       value: 
       objectReference: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: recieveBonusFrom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: messPoints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: cleanUpTime
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4e5c8f5b4415a4c9da23b34d17b080, type: 3}
 --- !u!1 &1945181477 stripped
@@ -15202,8 +15311,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normal: {fileID: 0}
   glowing: {fileID: 0}
-  cleanUpTime: 0
-  messPoints: 0
+  cleanUpTime: 5
+  messPoints: 10
   recieveBonusFrom: 0
   bonusMultiplier: 0
   isDestructable: 0
@@ -15890,15 +15999,15 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a3582ad23d38b1c4aafccb4ca5dee2f3, type: 2}
-    - target: {fileID: 3590831494630531600, guid: aa707ea696f2d3445a96640317a5e387,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 900048431408226538, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
       propertyPath: cleaningPlayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3590831494630531600, guid: aa707ea696f2d3445a96640317a5e387,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa707ea696f2d3445a96640317a5e387, type: 3}
@@ -17232,7 +17341,7 @@ PrefabInstance:
     - target: {fileID: 7193919710251415354, guid: 87fa65d73c63631489d882c78cf249df,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1608710997990573111, guid: 87fa65d73c63631489d882c78cf249df,
         type: 3}
