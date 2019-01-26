@@ -44,15 +44,15 @@ public class PlayerUI : MonoBehaviour
 
     public void Actiaved(bool IsCleaner)
     {
-        if (IsCleaner)
-        {
-            transform.GetChild(0).GetComponent<Image>().color = Color.blue;
-        }
-        else
-        {
-            transform.GetChild(0).GetComponent<Image>().color = Color.red;
-        }
-        
+        //if (IsCleaner)
+        //{
+        //    transform.GetChild(0).GetComponent<Image>().color = Color.blue;
+        //}
+        //else
+        //{
+        //    transform.GetChild(0).GetComponent<Image>().color = Color.red;
+        //}
+
     }
 
     public void EquipItem(ToolName tool)

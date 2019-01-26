@@ -243,7 +243,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: bd44a80ff13970349aa6b41a9a89890f, type: 3}
     m_FontSize: 69
     m_FontStyle: 0
     m_BestFit: 0
@@ -425,7 +425,7 @@ PrefabInstance:
     - target: {fileID: 4436668329341773874, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4436668329341773874, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
         type: 3}
@@ -496,7 +496,7 @@ Transform:
   m_Children:
   - {fileID: 1518075219}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &253595962
 PrefabInstance:
@@ -682,7 +682,7 @@ Transform:
   m_Children:
   - {fileID: 1233284004}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &359501894 stripped
 Transform:
@@ -822,6 +822,33 @@ PrefabInstance:
       propertyPath: Mess
       value: 
       objectReference: {fileID: 21300000, guid: 91c80ade797d4e44288ce2f6a4c7be76,
+        type: 3}
+    - target: {fileID: 3142705541807066865, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: bd44a80ff13970349aa6b41a9a89890f,
+        type: 3}
+    - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.37254903
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142705543295169511, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 87c7e968167a61146846975132ec742b,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deb1b7f7573fb4e4997fabd124e44a2f, type: 3}
@@ -1679,7 +1706,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &868407898
 PrefabInstance:
@@ -1731,7 +1758,7 @@ PrefabInstance:
     - target: {fileID: 3590831494630531602, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3590831494630531602, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
@@ -2087,6 +2114,33 @@ PrefabInstance:
       propertyPath: PlayerNumber
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3142705541807066865, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: bd44a80ff13970349aa6b41a9a89890f,
+        type: 3}
+    - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.21568629
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9450981
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142705543295169511, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 74942750bd8023f48b851cfec50fb48e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deb1b7f7573fb4e4997fabd124e44a2f, type: 3}
 --- !u!224 &899130194 stripped
@@ -2138,7 +2192,7 @@ Transform:
   - {fileID: 2023059170}
   - {fileID: 443185009}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &960382946 stripped
 Transform:
@@ -2262,7 +2316,7 @@ Transform:
   m_Children:
   - {fileID: 1966687832}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1071555627
 PrefabInstance:
@@ -2341,7 +2395,7 @@ PrefabInstance:
     - target: {fileID: 7193919710251415354, guid: 87fa65d73c63631489d882c78cf249df,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7193919710251415354, guid: 87fa65d73c63631489d882c78cf249df,
         type: 3}
@@ -3147,7 +3201,7 @@ PrefabInstance:
     - target: {fileID: 3590831494630531602, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3590831494630531602, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
@@ -3298,7 +3352,7 @@ RectTransform:
   - {fileID: 389391161}
   - {fileID: 1887446269}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3365,7 +3419,7 @@ Transform:
   m_Children:
   - {fileID: 1819041031}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1391855391 stripped
 Transform:
@@ -3746,7 +3800,7 @@ PrefabInstance:
     - target: {fileID: 3142705542871111927, guid: deb1b7f7573fb4e4997fabd124e44a2f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 94
+      value: 94.9
       objectReference: {fileID: 0}
     - target: {fileID: 3142705542871111927, guid: deb1b7f7573fb4e4997fabd124e44a2f,
         type: 3}
@@ -3798,6 +3852,33 @@ PrefabInstance:
       propertyPath: Mess
       value: 
       objectReference: {fileID: 21300000, guid: 91c80ade797d4e44288ce2f6a4c7be76,
+        type: 3}
+    - target: {fileID: 3142705541807066865, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: bd44a80ff13970349aa6b41a9a89890f,
+        type: 3}
+    - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.41960788
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.4431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142705543295169511, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 40e7795e10ad2df4e96d1d6c62024096,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deb1b7f7573fb4e4997fabd124e44a2f, type: 3}
@@ -4183,7 +4264,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: bd44a80ff13970349aa6b41a9a89890f, type: 3}
     m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
@@ -4463,7 +4544,7 @@ Transform:
   m_Children:
   - {fileID: 1655295400}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1736275556
 PrefabInstance:
@@ -4608,7 +4689,7 @@ PrefabInstance:
     - target: {fileID: 7193919710251415354, guid: 87fa65d73c63631489d882c78cf249df,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 7193919710251415354, guid: 87fa65d73c63631489d882c78cf249df,
         type: 3}
@@ -4896,6 +4977,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 91c80ade797d4e44288ce2f6a4c7be76,
         type: 3}
+    - target: {fileID: 3142705541807066865, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: bd44a80ff13970349aa6b41a9a89890f,
+        type: 3}
+    - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.54901963
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142705543295169511, guid: deb1b7f7573fb4e4997fabd124e44a2f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f0a1aa62730de094fa22d310719d9bc4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deb1b7f7573fb4e4997fabd124e44a2f, type: 3}
 --- !u!224 &1887446269 stripped
@@ -4965,7 +5073,7 @@ PrefabInstance:
     - target: {fileID: 4436668329341773874, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4436668329341773874, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
         type: 3}
@@ -5514,7 +5622,7 @@ Transform:
   - {fileID: 41922444}
   - {fileID: 591139331}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1988366758 stripped
 Transform:
@@ -5664,7 +5772,7 @@ Transform:
   m_Children:
   - {fileID: 656050879}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2013500410
 PrefabInstance:
@@ -5770,7 +5878,7 @@ Transform:
   m_Children:
   - {fileID: 1930904950}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2020972490
 PrefabInstance:
@@ -6067,7 +6175,7 @@ PrefabInstance:
     - target: {fileID: 7193919710251415354, guid: 87fa65d73c63631489d882c78cf249df,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 7193919710251415354, guid: 87fa65d73c63631489d882c78cf249df,
         type: 3}
@@ -6153,27 +6261,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5006909738da1a049ad9d956b4b56f71, type: 3}
---- !u!1001 &2723842563490703916
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7193919710251415354, guid: 87fa65d73c63631489d882c78cf249df,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7193919710251415354, guid: 87fa65d73c63631489d882c78cf249df,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608710997990573111, guid: 87fa65d73c63631489d882c78cf249df,
-        type: 3}
-      propertyPath: glowing
-      value: 
-      objectReference: {fileID: 2100000, guid: e4acf8e5f5a37254bb7f6c26d524cbfc, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 87fa65d73c63631489d882c78cf249df, type: 3}
