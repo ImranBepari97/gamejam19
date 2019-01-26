@@ -36,7 +36,7 @@ public class CleaningTool : Interactable
         rb.position = player.transform.GetChild(0).position;
         //rb.rotation = Quaternion.Euler(rb.rotation.x , player.transform.rotation.y, rb.rotation.x);
         StartCoroutine(MakeJoint());
-       
+      //  foreach (BoxCollider box in GetComponents<BoxCollider>()) box.enabled = false;
 
     }
 
@@ -49,7 +49,7 @@ public class CleaningTool : Interactable
         {
             Destroy(joint);
         }
-
+       // foreach (BoxCollider box in GetComponents<BoxCollider>()) box.enabled = true;
         rb.velocity = new Vector3(0,0,0);
 
     }

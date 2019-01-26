@@ -17614,6 +17614,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -46.259003
       objectReference: {fileID: 0}
+    - target: {fileID: 7193919710251415354, guid: 87fa65d73c63631489d882c78cf249df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.08
+      objectReference: {fileID: 0}
     - target: {fileID: 1608710997990573111, guid: 87fa65d73c63631489d882c78cf249df,
         type: 3}
       propertyPath: glowing
