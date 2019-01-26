@@ -9,6 +9,7 @@ public class LocalGameManager : MonoBehaviour
     private SfxPlayer Sfx;
     public Text CountDownText;
     private PlayerMovement[] Players;
+    public AudioClip Countdown;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,7 @@ public class LocalGameManager : MonoBehaviour
         FindObjectOfType<GameTimer>().enabled = false;
         CountDownText.text = "Get Ready!";
         yield return new WaitForSeconds(3);
+        Sfx.PlaySfx(Countdown);
         for (int i = 3; i > 0; i--)
         {
             CountDownText.text = "" + i;

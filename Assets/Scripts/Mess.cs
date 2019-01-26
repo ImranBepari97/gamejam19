@@ -32,11 +32,13 @@ public class Mess : Interactable
     /// <param name="thisplayer"></param>
     public void CleanMess(PlayerInteract thisplayer)
     {
-        
-        if (thisplayer.currentTool.toolName == recieveBonusFrom && recieveBonusFrom != ToolName.None)
+        if (thisplayer.currentTool != null)
         {
-            cleanUpTime = cleanUpTime / bonusMultiplier;
-          
+            if (thisplayer.currentTool.toolName == recieveBonusFrom && recieveBonusFrom != ToolName.None)
+            {
+                cleanUpTime = cleanUpTime / bonusMultiplier;
+
+            }
         }
         //Player UI clean progress bar
         StartCoroutine(BeingCleaned());
