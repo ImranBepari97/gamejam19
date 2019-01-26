@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum FloorTypes
+{
+    Tiled, Carpet
+}
+
 public class Mess : Interactable
 {
     public float cleanUpTime;
@@ -11,6 +16,9 @@ public class Mess : Interactable
     public bool isDestructable;    
     private PlayerInteract player;
     private GameManager GameManager;
+    public LayerMask WhatIsGround;
+    public float TiledMultiplier;
+    public float CarpetMultiplier;
     
     // Start is called before the first frame update
     void Start()
@@ -32,6 +40,10 @@ public class Mess : Interactable
     /// <param name="thisplayer"></param>
     public void CleanMess(PlayerInteract thisplayer)
     {
+       // var hit = Physics.Raycast(transform.position, Vector3.down, WhatIsGround);
+       
+
+
         if (thisplayer.currentTool != null)
         {
             if (thisplayer.currentTool.toolName == recieveBonusFrom && recieveBonusFrom != ToolName.None)
@@ -74,6 +86,7 @@ public class Mess : Interactable
     public void SpawnMoreMess()
     {
         transform.parent.GetChild(1).gameObject.SetActive(true);
+        transform.parent.GetChild(1).transform.position = new Vector3(transform.position.x, transform.parent.GetChild(1).transform.position.y, transform.position.z);
         GameManager.AddMessScore(messPoints);
     }
 }

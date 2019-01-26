@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum ToolName
 {
-    None, Mop, Vaccuum
+    None, Mop, Vaccuum, Mess
 }
 
 [RequireComponent(typeof(Rigidbody))]

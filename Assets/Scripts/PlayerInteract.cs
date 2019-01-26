@@ -33,6 +33,18 @@ public class PlayerInteract : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire1") && !isCleaning) //will need to change "Fire1" dependant on player number
         {
+            if (currentInteractObject == null)
+            {
+                return;
+            }
+            if (cleaningPlayer && currentInteractObject.CompareTag("MessPlayer"))
+            {
+                return;
+            }
+            if (!cleaningPlayer && currentInteractObject.CompareTag("CleanPlayer"))
+            {
+                return;
+            }
             if (currentInteractObject != null && currentInteractObject.GetComponent<Mess>()) //if interacting object within range
             {
                 playerMovement.enabled = false; //deactivate movement
@@ -83,14 +95,15 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerStay(Collider other) //using on stay rather than enter to get other objects in range when one is finished interacting with
     {
-        if (cleaningPlayer && other.gameObject.CompareTag("MessPlayer"))
-        {
-            return;
-        }
-        if (!cleaningPlayer && other.gameObject.CompareTag("CleanPlayer"))
-        {
-            return;
-        }
+
+        //if (cleaningPlayer && other.gameObject.CompareTag("MessPlayer"))
+        //{
+        //    return;
+        //}
+        //if (!cleaningPlayer && other.gameObject.CompareTag("CleanPlayer"))
+        //{
+        //    return;
+        //}
 		Interactable inter;
 		if (inter = other.gameObject.GetComponent<Interactable>()) {
             if (currentInteractObject == null)
@@ -104,7 +117,18 @@ public class PlayerInteract : MonoBehaviour
                         return;
                     }
                 }
-
+                else
+                {
+                  if (cleaningPlayer && other.gameObject.CompareTag("MessPlayer"))
+                    {
+                        return;
+                    }
+                    if (!cleaningPlayer && other.gameObject.CompareTag("CleanPlayer"))
+                    {
+                        return;
+                    }
+                }
+                
                 currentInteractObject = other.gameObject;
                 inter.PlayerInRange();
             }

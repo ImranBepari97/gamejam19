@@ -8,6 +8,7 @@ public class PlayerUI : MonoBehaviour
     private Image ToolImage;
     public Sprite Mop;
     public Sprite Vacuum;
+    public Sprite Mess;
     public int PlayerNumber;
     //public Sprite Empty;
     // Start is called before the first frame update
@@ -64,7 +65,9 @@ public class PlayerUI : MonoBehaviour
                 newcolor.a = 0;
                 ToolImage.color = newcolor;
                 ToolImage.sprite = null;
-
+                break;
+            case (ToolName.Mess):
+                ToolImage.sprite = Mess;
                 break;
             case (ToolName.Mop):
                 ToolImage.sprite = Mop;
