@@ -1,0 +1,3 @@
+1:1.2
+ceiling 2.4m
+vacuum cleaner 1.09m 
