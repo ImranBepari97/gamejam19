@@ -21,5 +21,10 @@ public void MuteMusic()
 {
     GameObject.Find("GameManager").GetComponent<GameManager>().mp.ToggleMusic();
 }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
 

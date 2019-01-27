@@ -24,6 +24,7 @@ public class Mess : Interactable
     public bool OnSide;
     public bool OnOtherSide;
     private SfxPlayer Sfx;
+    public bool IsBeingCleaned;
     
     // Start is called before the first frame update
     void Start()
@@ -149,6 +150,7 @@ public class Mess : Interactable
     /// <returns></returns>
     IEnumerator BeingCleaned()
     {
+        IsBeingCleaned = true;
         //lock player movement
         yield return new WaitForSeconds(cleanUpTime);
         print("EndClean");

@@ -47,8 +47,15 @@ public class PlayerInteract : MonoBehaviour
             {
                 return;
             }
+
             if (currentInteractObject != null && currentInteractObject.GetComponent<Mess>()) //if interacting object within range
             {
+                if (currentInteractObject.GetComponent<Mess>().IsBeingCleaned)
+                {
+                    currentInteractObject = null;
+                    return;
+
+                }
                 playerMovement.enabled = false; //deactivate movement
                 isCleaning = true;
                 currentInteractObject.GetComponent<Mess>().CleanMess(this); //let object know its cleaning
@@ -102,7 +109,6 @@ public class PlayerInteract : MonoBehaviour
         playerMovement.enabled = true; //enable movement
         isCleaning = false; //player is not cleaning up anymore
     }
-
 
     private void OnTriggerStay(Collider other) //using on stay rather than enter to get other objects in range when one is finished interacting with
     {
