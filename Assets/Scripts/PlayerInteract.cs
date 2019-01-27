@@ -12,6 +12,7 @@ public class PlayerInteract : MonoBehaviour
     public CleaningTool currentTool;
     public bool cleaningPlayer;
     public PlayerUI MyUI;
+    private FloatingNumbers FloatNums;
     //public int PlayerNumber;
 
     void Start()
@@ -21,6 +22,7 @@ public class PlayerInteract : MonoBehaviour
         {
             MyUI.Actiaved(cleaningPlayer);
         }
+        FloatNums = GameObject.Find("FloatNumberCanvas").GetComponent<FloatingNumbers>();
         
     }
 
@@ -84,8 +86,9 @@ public class PlayerInteract : MonoBehaviour
     /// <summary>
     /// Called by an interact object when it has finished being cleaned
     /// </summary>
-    public void FinishClean()
+    public void FinishClean(int points)
     {
+        FloatNums.RequestNumber(points, this.gameObject);
         currentInteractObject.SetActive(false); //hide object. This line may change when object is coded more
         if (currentTool != null)
         {

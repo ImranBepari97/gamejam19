@@ -159,7 +159,7 @@ public class Mess : Interactable
         {
             GameManager.AddCleanScore(messPoints);
         }
-        player.FinishClean(); //reactivates player movement
+        player.FinishClean(messPoints); //reactivates player movement
         Sfx.PlaySfx(CleanMessEndSfx);
         
         //add points to global score
