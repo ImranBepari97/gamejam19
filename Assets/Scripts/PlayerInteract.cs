@@ -151,5 +151,10 @@ public class PlayerInteract : MonoBehaviour
         }
     }
 
+    public void HoldingTool()
+    {
+        currentInteractObject.GetComponent<Interactable>().PlayerOutofRange(); //reset object interact settings
+        currentInteractObject = null;
+    }
 
 }

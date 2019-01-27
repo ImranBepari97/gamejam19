@@ -15,6 +15,7 @@ public class CleaningTool : Interactable
 
     Rigidbody rb;
     FixedJoint joint;
+    private bool attached;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,10 @@ public class CleaningTool : Interactable
     // Update is called once per frame
     void Update()
     {
+        if (attached)
+        {
+            transform.position = player.transform.GetChild(0).position;
+        }
         
     }
 
@@ -33,10 +38,12 @@ public class CleaningTool : Interactable
     {
         player = activatingPlayer;
         activatingPlayer.currentTool = this;
-        rb.position = player.transform.GetChild(0).position;
+        attached = true;
+      //  rb.position = player.transform.GetChild(0).position;
         //rb.rotation = Quaternion.Euler(rb.rotation.x , player.transform.rotation.y, rb.rotation.x);
-        StartCoroutine(MakeJoint());
-      //  foreach (BoxCollider box in GetComponents<BoxCollider>()) box.enabled = false;
+       // StartCoroutine(MakeJoint());
+        foreach (BoxCollider box in GetComponents<BoxCollider>()) box.enabled = false;
+        activatingPlayer.HoldingTool();
 
     }
 
@@ -44,12 +51,12 @@ public class CleaningTool : Interactable
     {
         player.currentTool = null;
         player = null;
-
+        attached = false;
         if(joint != null)
         {
             Destroy(joint);
         }
-       // foreach (BoxCollider box in GetComponents<BoxCollider>()) box.enabled = true;
+        foreach (BoxCollider box in GetComponents<BoxCollider>()) box.enabled = true;
         rb.velocity = new Vector3(0,0,0);
 
     }
