@@ -111,7 +111,7 @@ MonoBehaviour:
   CleanMessEndSfx: {fileID: 0}
   CleaningSfx: {fileID: 8300000, guid: d762fea8027fc1a4ea728b012d51e887, type: 3}
   cleanUpTime: 2
-  messPoints: 10
+  messPoints: 6
   recieveBonusFrom: 0
   bonusMultiplier: 0
   isDestructable: 1
@@ -219,7 +219,7 @@ PrefabInstance:
     - target: {fileID: 4436668329341773874, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.013
+      value: 0.085
       objectReference: {fileID: 0}
     - target: {fileID: 4436668329341773874, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
         type: 3}

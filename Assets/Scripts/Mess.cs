@@ -116,16 +116,17 @@ public class Mess : Interactable
         
        
 
-
+        //print("ToolCheck" + )
         if (thisplayer.currentTool != null)
         {
             if ((thisplayer.currentTool.toolName == recieveBonusFrom) && (recieveBonusFrom != ToolName.None))
             {
                 if (bonusMultiplier == 0)
                 {
-                    bonusMultiplier = 2;
+                    bonusMultiplier = 1;
                 }
                 cleanUpTime = cleanUpTime / bonusMultiplier;
+                messPoints = messPoints * (int)bonusMultiplier;
 
             }
         }

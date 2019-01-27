@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normal: {fileID: 0}
-  glowing: {fileID: 0}
+  glowing: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
   CleanMessEndSfx: {fileID: 8300000, guid: 43fe8ab6590db3b41a55af40f6c3f7b0, type: 3}
   CleaningSfx: {fileID: 8300000, guid: 43fe8ab6590db3b41a55af40f6c3f7b0, type: 3}
   cleanUpTime: 4

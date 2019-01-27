@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 1013412569}
   - component: {fileID: 1013412568}
   m_Layer: 5
-  m_Name: Score3
+  m_Name: Score4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1229,7 +1229,7 @@ GameObject:
   - component: {fileID: 2047411684}
   - component: {fileID: 2047411683}
   m_Layer: 5
-  m_Name: Score4
+  m_Name: Score3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
