@@ -93,10 +93,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0919dd51cb4fac4429239e02c8cdc373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CleanUpTime: 0
-  MessPoints: 0
-  glowing: {fileID: 0}
   normal: {fileID: 0}
+  glowing: {fileID: 0}
+  CleanMessEndSfx: {fileID: 8300000, guid: 43fe8ab6590db3b41a55af40f6c3f7b0, type: 3}
+  CleaningSfx: {fileID: 8300000, guid: 43fe8ab6590db3b41a55af40f6c3f7b0, type: 3}
+  cleanUpTime: 4
+  messPoints: 2
+  recieveBonusFrom: 1
+  bonusMultiplier: 1.5
+  isDestructable: 0
+  WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 2048
+  TiledMultiplier: 2
+  CarpetMultiplier: 0.5
+  OnSide: 0
+  OnOtherSide: 1
 --- !u!65 &4464370588251070657
 BoxCollider:
   m_ObjectHideFlags: 0
