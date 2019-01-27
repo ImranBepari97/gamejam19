@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
             fader = transform.GetChild(0).GetChild(0).GetComponent<Image>();
             fader.gameObject.SetActive(false);
+            Created = true;
         }
         else
         {

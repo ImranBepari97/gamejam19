@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum ToolName
 {
-    None, Mop, Vaccuum, Mess
+    None, Mop, Vaccuum, Mess, vase, bucket
 }
 
 [RequireComponent(typeof(Rigidbody))]
@@ -12,7 +12,10 @@ public class CleaningTool : Interactable
 {
     public PlayerInteract player;
     public ToolName toolName;
-
+    public AudioClip PickUpSfx;
+    public AudioClip DropSfx;
+    public AudioClip UseSfx;
+    private SfxPlayer Sfx;
     Rigidbody rb;
     FixedJoint joint;
     private bool attached;
@@ -20,6 +23,7 @@ public class CleaningTool : Interactable
     // Start is called before the first frame update
     void Start()
     {
+        Sfx = GameObject.Find("SfxPlayer").GetComponent<SfxPlayer>();
         base.Start();
         rb = GetComponent<Rigidbody>();
     }
@@ -39,6 +43,7 @@ public class CleaningTool : Interactable
         player = activatingPlayer;
         activatingPlayer.currentTool = this;
         attached = true;
+        Sfx.PlaySfx(PickUpSfx);
       //  rb.position = player.transform.GetChild(0).position;
         //rb.rotation = Quaternion.Euler(rb.rotation.x , player.transform.rotation.y, rb.rotation.x);
        // StartCoroutine(MakeJoint());
@@ -52,6 +57,7 @@ public class CleaningTool : Interactable
         player.currentTool = null;
         player = null;
         attached = false;
+        Sfx.PlaySfx(DropSfx);
         if(joint != null)
         {
             Destroy(joint);

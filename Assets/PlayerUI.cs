@@ -9,6 +9,8 @@ public class PlayerUI : MonoBehaviour
     public Sprite Mop;
     public Sprite Vacuum;
     public Sprite Mess;
+    public Sprite bucket;
+    public Sprite vase;
     public int PlayerNumber;
     //public Sprite Empty;
     // Start is called before the first frame update
@@ -74,6 +76,12 @@ public class PlayerUI : MonoBehaviour
                 break;
             case (ToolName.Vaccuum):
                 ToolImage.sprite = Vacuum;
+                break;
+            case (ToolName.vase):
+                ToolImage.sprite = vase;
+                break;
+            case (ToolName.bucket):
+                ToolImage.sprite = bucket;
                 break;
         };
     }
