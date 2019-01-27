@@ -14,12 +14,20 @@ public class GameManager : MonoBehaviour
     public MusicPlayer mp;
     private int MessScore;
     private int CleanScore;
+    private int PlayerOneScore;
+    private int PlayerTwoScore;
+    private int PlayerThreeScore;
+    private int PlayerFourScore;
 
 
     public void ResetScores()
     {
         MessScore = 0;
         CleanScore = 0;
+        PlayerOneScore = 0;
+        PlayerTwoScore = 0;
+        PlayerThreeScore = 0;
+        PlayerFourScore = 0;
     }
     // Start is called before the first frame update
     void Awake()
@@ -149,6 +157,12 @@ private IEnumerator EndScreen()
             GameObject.Find("WinnersText").GetComponent<Text>().text = "Messers Win";
             GameObject.Find("WinnersText").GetComponent<Text>().color = Color.red;
         }
+
+        GameObject.Find("Score1").GetComponent<Text>().text = "Player 1: " + PlayerOneScore;
+        GameObject.Find("Score2").GetComponent<Text>().text = "Player 2: " + PlayerTwoScore;
+        GameObject.Find("Score3").GetComponent<Text>().text = "Player 3: " + PlayerThreeScore;
+        GameObject.Find("Score4").GetComponent<Text>().text = "Player 4: " + PlayerFourScore;
+
         yield return new WaitForSeconds(10);
         LoadNextScene();
     }
