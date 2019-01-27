@@ -4,14 +4,27 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Bed
+    100004: Camera
+    100006: Light
     400000: //RootNode
+    400002: Bed
+    400004: Camera
+    400006: Light
+    2000000: Camera
     2100000: White
     2100002: Wood
     2100004: DarkBrown
     2100006: Sheets
+    2100008: wood
+    2100010: wood.001
+    2100012: wood_dark
     2300000: //RootNode
+    2300002: Bed
     3300000: //RootNode
+    3300002: Bed
     4300000: Bed
+    10800000: Light
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -22,12 +35,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sheets
-    second: {fileID: 2100000, guid: e4acf8e5f5a37254bb7f6c26d524cbfc, type: 2}
+    second: {fileID: 2100000, guid: 41d36678166ae1f4897ace50a4bd60c0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wood
     second: {fileID: 2100000, guid: 72bceda0c0eefa2499a4c07ab3c5d80c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2100000, guid: b1d8095105e077346a56c78da8f34bd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood.001
+    second: {fileID: 2100000, guid: 40bfe302e86fbe0479350bb7ec3fa240, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -58,10 +81,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
-    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -86,9 +108,6 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
-    blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
