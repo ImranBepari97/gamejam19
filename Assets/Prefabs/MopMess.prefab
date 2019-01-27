@@ -316,6 +316,16 @@ PrefabInstance:
       propertyPath: CleaningSfx
       value: 
       objectReference: {fileID: 8300000, guid: 43fe8ab6590db3b41a55af40f6c3f7b0, type: 3}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: glowing
+      value: 
+      objectReference: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
+    - target: {fileID: 2468832749267011305, guid: 8c4e5c8f5b4415a4c9da23b34d17b080,
+        type: 3}
+      propertyPath: normal
+      value: 
+      objectReference: {fileID: 2100000, guid: 72bceda0c0eefa2499a4c07ab3c5d80c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4e5c8f5b4415a4c9da23b34d17b080, type: 3}
 --- !u!4 &8973851256075499547 stripped
