@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normal: {fileID: 0}
-  glowing: {fileID: 0}
+  glowing: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
   CleanMessEndSfx: {fileID: 0}
   CleaningSfx: {fileID: 8300000, guid: d762fea8027fc1a4ea728b012d51e887, type: 3}
   cleanUpTime: 2
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normal: {fileID: 0}
-  glowing: {fileID: 0}
+  glowing: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
   player: {fileID: 0}
   toolName: 5
   PickUpSfx: {fileID: 8300000, guid: 435b51ffc1007b446976eba4447d124e, type: 3}

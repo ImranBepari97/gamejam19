@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normal: {fileID: 0}
-  glowing: {fileID: 0}
+  glowing: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
   player: {fileID: 0}
   toolName: 4
   PickUpSfx: {fileID: 8300000, guid: 435b51ffc1007b446976eba4447d124e, type: 3}
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normal: {fileID: 0}
-  glowing: {fileID: 0}
+  glowing: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
   CleanMessEndSfx: {fileID: 8300000, guid: 56de8380eed003e45af8f287c48b1a3b, type: 3}
   CleaningSfx: {fileID: 8300000, guid: 56de8380eed003e45af8f287c48b1a3b, type: 3}
   cleanUpTime: 1
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normal: {fileID: 0}
-  glowing: {fileID: 0}
+  glowing: {fileID: 2100000, guid: ca43faec1d1aacc489a7fc28e9f3cfc6, type: 2}
   CleanMessEndSfx: {fileID: 8300000, guid: 18a010c2c3e4e784b8474733faeb1af2, type: 3}
   CleaningSfx: {fileID: 8300000, guid: 18a010c2c3e4e784b8474733faeb1af2, type: 3}
   cleanUpTime: 4

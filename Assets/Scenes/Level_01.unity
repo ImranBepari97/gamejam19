@@ -8881,7 +8881,7 @@ PrefabInstance:
     - target: {fileID: 3590831494630531601, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
       propertyPath: playerNum
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3590831494630531601, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
@@ -13795,7 +13795,7 @@ PrefabInstance:
     - target: {fileID: 3590831494630531601, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
       propertyPath: playerNum
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3590831494630531601, guid: aa707ea696f2d3445a96640317a5e387,
         type: 3}
