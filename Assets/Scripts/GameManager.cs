@@ -167,5 +167,14 @@ private IEnumerator EndScreen()
         LoadNextScene();
     }
     
+    public void AddScore(int points, GameObject player)
+    {
+        PlayerMovement pm = player.GetComponent<PlayerMovement>();
+
+        if (pm.playerNum == 1) PlayerOneScore += points;
+        if (pm.playerNum == 2) PlayerTwoScore += points;
+        if (pm.playerNum == 3) PlayerThreeScore += points;
+        if (pm.playerNum == 4) PlayerFourScore += points;
+    }
     
 }

@@ -38,8 +38,8 @@ public class FloatingNumbers : MonoBehaviour
                 Numbers[i].GetComponent<Text>().text = "+" + number;
                 if (player.GetComponent<PlayerMovement>().playerNum == 1) Numbers[i].GetComponent<Text>().color = Color.blue;
                 if (player.GetComponent<PlayerMovement>().playerNum == 2) Numbers[i].GetComponent<Text>().color = Color.yellow;
-                if (player.GetComponent<PlayerMovement>().playerNum == 3) Numbers[i].GetComponent<Text>().color = Color.green;
-                if (player.GetComponent<PlayerMovement>().playerNum == 4) Numbers[i].GetComponent<Text>().color = Color.red;
+                if (player.GetComponent<PlayerMovement>().playerNum == 4) Numbers[i].GetComponent<Text>().color = Color.green;
+                if (player.GetComponent<PlayerMovement>().playerNum == 3) Numbers[i].GetComponent<Text>().color = Color.red;
                 StartCoroutine(NumberFade(i));
                 return;
             }

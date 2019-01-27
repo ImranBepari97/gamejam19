@@ -89,6 +89,7 @@ public class PlayerInteract : MonoBehaviour
     public void FinishClean(int points)
     {
         FloatNums.RequestNumber(points, this.gameObject);
+        GameObject.Find("GameManager").GetComponent<GameManager>().AddScore(points, this.gameObject);
         currentInteractObject.SetActive(false); //hide object. This line may change when object is coded more
         if (currentTool != null)
         {
