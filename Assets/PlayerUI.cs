@@ -27,6 +27,10 @@ public class PlayerUI : MonoBehaviour
             {
                 players[i].GetComponent<PlayerInteract>().MyUI = this;
                 assigned = true;
+                if (players[i].GetComponent<PlayerMovement>().playerNum == 1) transform.GetChild(0).GetComponent<Image>().color = Color.blue;
+                if (players[i].GetComponent<PlayerMovement>().playerNum == 2) transform.GetChild(0).GetComponent<Image>().color = Color.yellow;
+                if (players[i].GetComponent<PlayerMovement>().playerNum == 3) transform.GetChild(0).GetComponent<Image>().color = Color.green;
+                if (players[i].GetComponent<PlayerMovement>().playerNum == 4) transform.GetChild(0).GetComponent<Image>().color = Color.red;
                 return;
             }
             
