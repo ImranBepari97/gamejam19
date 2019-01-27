@@ -4331,7 +4331,7 @@ PrefabInstance:
     - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
         type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.32941177
       objectReference: {fileID: 0}
     - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
         type: 3}
@@ -4341,13 +4341,13 @@ PrefabInstance:
     - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.3372549
+      value: 0.36078432
       objectReference: {fileID: 0}
     - target: {fileID: 3142705543295169511, guid: deb1b7f7573fb4e4997fabd124e44a2f,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f0a1aa62730de094fa22d310719d9bc4,
+      objectReference: {fileID: 21300000, guid: 87c7e968167a61146846975132ec742b,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deb1b7f7573fb4e4997fabd124e44a2f, type: 3}
@@ -22315,7 +22315,7 @@ PrefabInstance:
     - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.32941177
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
         type: 3}
@@ -22325,13 +22325,13 @@ PrefabInstance:
     - target: {fileID: 3142705542086010792, guid: deb1b7f7573fb4e4997fabd124e44a2f,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.36078432
+      value: 0.49411768
       objectReference: {fileID: 0}
     - target: {fileID: 3142705543295169511, guid: deb1b7f7573fb4e4997fabd124e44a2f,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 87c7e968167a61146846975132ec742b,
+      objectReference: {fileID: 21300000, guid: f0a1aa62730de094fa22d310719d9bc4,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deb1b7f7573fb4e4997fabd124e44a2f, type: 3}
